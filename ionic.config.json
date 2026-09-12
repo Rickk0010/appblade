@@ -1,0 +1,7 @@
+{
+  "name": "appblade",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
