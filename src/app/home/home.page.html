@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      Login para Galeria
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +14,22 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+    <div id="conteudo">
+        <ion-chip>
+          <ion-avatar>
+            <img alt="Foto de perfil" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          </ion-avatar>
+          <ion-label>Usuário</ion-label>
+        </ion-chip>
+        
+          <ion-input label="Login: " placeholder="email@email.com" type="email" fill="outline" [clearInput]="true" labelPlacement="floating"></ion-input>
+        
+          <ion-input label="Senha: " placeholder="********" type="password" fill="outline" labelPlacement="floating"> </ion-input>
+                
+          <ion-button expand="block" color="primary" routerLink="/galeria">Entrar</ion-button>
+    </div>
+
   </div>
+      
 </ion-content>

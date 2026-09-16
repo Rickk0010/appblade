@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 
-// Componentes principais do Ionic
 import {
   IonHeader,        // Cabeçalho da página
   IonToolbar,       // Barra dentro do cabeçalho
@@ -33,18 +34,20 @@ import {
   IonBadge,         // Pequeno indicador/etiqueta
   IonChip,          // Pequena etiqueta interativa
   IonAvatar,
+  IonGrid,
+  IonRow,
+  IonCol
         
 } from '@ionic/angular';
 
 
-@Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
 
-  // Coloque aqui SOMENTE os componentes
-  // que realmente serão usados no HTML desta página.
-  imports: [
+@Component({
+  selector: 'app-galeria',
+  templateUrl: './galeria.page.html',
+  styleUrls: ['./galeria.page.scss'],
+  imports: 
+  [
     RouterLink,
 
     IonHeader,
@@ -55,11 +58,18 @@ import {
     IonInput,
     IonButton,
     IonChip,
-    IonLabel
+    IonLabel,
+    IonGrid,
+    IonRow,
+    IonCol
   ],
-})
-export class HomePage {
 
-  constructor() {}
+})
+export class GaleriaPage implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }
