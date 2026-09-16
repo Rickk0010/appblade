@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 
+import { addIcons } from 'ionicons';
+import { logoIonic, square, star, ellipse } from 'ionicons/icons';
+
 import {
   IonHeader,        // Cabeçalho da página
   IonToolbar,       // Barra dentro do cabeçalho
@@ -61,13 +64,16 @@ import {
     IonLabel,
     IonGrid,
     IonRow,
-    IonCol
+    IonCol,
+    IonList,
+    IonItem,
+    IonIcon
   ],
 
 })
 export class GaleriaPage implements OnInit {
 
-  constructor() { }
+  constructor() { addIcons({ logoIonic, square, star, ellipse }); }
 
   ngOnInit() {
   }
