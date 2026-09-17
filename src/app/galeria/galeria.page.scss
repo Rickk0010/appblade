@@ -1,3 +1,17 @@
+ion-toolbar {
+  position: relative;
+}
+
+.titulo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  margin: 0;
+  text-align: center;
+}
+
 #container {
   display: flex;
   flex-direction: column;
@@ -72,7 +86,26 @@ ion-title {
   margin-top: 8px;
 
   font-size: 15px;
-  color: #c0c0c0;
+  color: #d3d2d2;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.redes span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.redes a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* =========================
@@ -115,6 +148,8 @@ ion-title {
 
 .galeria ion-col {
   padding: 5px;
+  overflow: hidden;
+
 }
 
 .galeria img {
@@ -140,6 +175,7 @@ ion-title {
 
 .foto-pequena {
   height: calc(50% - 5px);
+  overflow: hidden;
 }
 
 
@@ -148,9 +184,24 @@ ion-title {
    ========================= */
 
 ion-col {
-  background-color: #135d54;
+  background-color: #343535;
   border: solid 1px #fff;
 
   color: #fff;
   text-align: center;
 }
+
+
+/* =========================
+   CORES PERSONALIZADAS
+   ========================= */
+
+   .jn-background {
+  background-color: #faa019;
+}
+
+   .mk-background {
+  background-color: #84902B;
+
+}
+

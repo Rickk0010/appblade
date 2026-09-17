@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 
 import { addIcons } from 'ionicons';
-import { logoIonic, square, star, ellipse } from 'ionicons/icons';
+import { logoIonic, square, star, ellipse, musicalNotes, book, gameController, brush, headset, logoGithub, logoInstagram, tv, footsteps, colorFill, bug, code, hammer, albums, shirt, logOutOutline } from 'ionicons/icons';
 
 import {
   IonHeader,        // Cabeçalho da página
@@ -73,7 +73,7 @@ import {
 })
 export class GaleriaPage implements OnInit {
 
-  constructor() { addIcons({ logoIonic, square, star, ellipse }); }
+  constructor() { addIcons({ logoIonic, square, star, ellipse, musicalNotes, book, gameController, brush, headset, logoGithub, logoInstagram, tv, footsteps, colorFill, bug, code, hammer, albums, shirt, logOutOutline  }); }
 
   ngOnInit() {
   }

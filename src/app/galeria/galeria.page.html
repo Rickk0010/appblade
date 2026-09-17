@@ -1,6 +1,12 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Galeria de fotos</ion-title>
+  <ion-toolbar color="tertiary">
+    <ion-title class="titulo" [style.text-align]="'center'">Galeria de fotos</ion-title>
+
+    <ion-button slot="end" color="danger" routerLink="/home">
+      <ion-icon name="log-out-outline" fill="clear" slot="start"></ion-icon>
+      Sair
+    </ion-button>
+
   </ion-toolbar>
 </ion-header>
 
@@ -20,7 +26,7 @@
         <ion-avatar class="foto-perfil">
           <img
             alt="Foto de perfil"
-            src="assets/rk_ft.JPG"
+            src="assets/rk_pfp.JPG"
           />
         </ion-avatar>
 
@@ -29,8 +35,19 @@
             Henrique Rodrigues Silva
           </div>
 
-          <div class="descricao">
+         <div class="descricao">
             Um desenvolvedor front-end em busca de sempre melhorar
+            <div class="redes">
+              <span>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <a href="https://www.instagram.com/rickzin0010/" target="_blank">rickzin0010</a>
+              </span>
+
+              <span>
+                <ion-icon name="logo-github"></ion-icon>
+                <a href="https://github.com/Rickk0010" target="_blank">Rickk0010</a>
+              </span>
+            </div>
           </div>
         </div>
 
@@ -39,19 +56,19 @@
       <div class="lista">
         <ion-list [inset]="true">
           <ion-item>
-            <ion-label> <ion-icon name="square" color="secondary"></ion-icon> Tocar Piano</ion-label>
+            <ion-label> <ion-icon name="musical-notes" color="secondary"></ion-icon> Tocar Piano</ion-label>
           </ion-item>
           <ion-item>
-            <ion-label> <ion-icon name="square" color="secondary"></ion-icon> Jogar Videogame</ion-label>
+            <ion-label> <ion-icon name="game-controller" color="secondary"></ion-icon> Jogar Videogame</ion-label>
           </ion-item>
         </ion-list>
 
         <ion-list [inset]="true">
           <ion-item>
-            <ion-label> <ion-icon name="square" color="secondary"></ion-icon> Ler livros</ion-label>
+            <ion-label> <ion-icon name="book" color="secondary"></ion-icon> Ler livros</ion-label>
           </ion-item>
           <ion-item>
-            <ion-label> <ion-icon name="square" color="secondary"></ion-icon> Ver Séries</ion-label>
+            <ion-label> <ion-icon name="tv" color="secondary"></ion-icon> Ver Séries</ion-label>
           </ion-item>
         </ion-list>
       </div>
@@ -62,18 +79,18 @@
 
           <!-- Foto principal -->
           <ion-col size="7">
-            <img src="" alt="Foto principal">
+            <img src="assets/rkft1.png" alt="Foto principal">
           </ion-col>
 
           <!-- Fotos menores -->
           <ion-col size="5">
 
             <div class="foto-pequena">
-              <img src="" alt="Foto 2">
+              <img src="assets/rkft5.jpg" alt="Foto 2">
             </div>
 
             <div class="foto-pequena">
-              <img src="" alt="Foto 3">
+              <img src="assets/rkft3.jpg" alt="Foto 3">
             </div>
 
           </ion-col>
@@ -83,11 +100,11 @@
 
         <ion-row>
             <ion-col size="4">
-              <img src="" alt="Foto 4">
+              <img src="assets/rkft4.jpg" alt="Foto 4">
             </ion-col>
 
             <ion-col size="8">
-              <img src="" alt="Foto 5">
+              <img src="assets/rkft2.JPG" alt="Foto 5">
             </ion-col>
         </ion-row>
 
@@ -95,25 +112,31 @@
 
   </div> 
 
-  <!--- outro card de perfil -->
+  <!--- card de perfil do Mike -->
 
     <div class="perfil-card">
-      <div class="perfil">
+      <div class="perfil mk-background">
 
         <ion-avatar class="foto-perfil">
           <img
             alt="Foto de perfil"
-            src="https://ionicframework.com/docs/img/demos/avatar.svg"
+            src="assets/mk_pfp.jpeg"
           />
         </ion-avatar>
 
         <div class="informacoes">
           <div class="nome">
-            Nome do integrante
+            Mike Rezende Cabolão
           </div>
 
-          <div class="descricao">
-            Descrição do integrante
+         <div class="descricao">
+            Apenas um designer amador que adora banco de dados
+            <div class="redes">
+              <span>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <a href="https://www.instagram.com/mrc_uma_pessoa_qualquer/" target="_blank">@MRC_uma_pessoa_qualquer</a>
+              </span>
+            </div>
           </div>
         </div>
 
@@ -122,19 +145,19 @@
       <div class="lista">
         <ion-list [inset]="true">
           <ion-item>
-            <ion-label> <ion-icon name="square" color="secondary"></ion-icon>Pokémon Yellow</ion-label>
+            <ion-label> <ion-icon name="brush" color="secondary"></ion-icon> Desenhar</ion-label>
           </ion-item>
           <ion-item>
-            <ion-label> <ion-icon name="square" color="secondary"></ion-icon>Mega Man X</ion-label>
+            <ion-label> <ion-icon name="shirt" color="secondary"></ion-icon> Costurar</ion-label>
           </ion-item>
         </ion-list>
 
         <ion-list [inset]="true">
           <ion-item>
-            <ion-label> <ion-icon name="square" color="secondary"></ion-icon>Pac-Man</ion-label>
+            <ion-label> <ion-icon name="code" color="secondary"></ion-icon> Programar</ion-label>
           </ion-item>
           <ion-item>
-            <ion-label> <ion-icon name="square" color="secondary"></ion-icon>Super Mario World</ion-label>
+            <ion-label> <ion-icon name="hammer" color="secondary"></ion-icon> Modelar com Biscuit</ion-label>
           </ion-item>
         </ion-list>
       </div>
@@ -145,18 +168,18 @@
 
           <!-- Foto principal -->
           <ion-col size="7">
-            <img src="" alt="Foto principal">
+            <img src="assets/mkft3.jpeg" alt="Foto principal">
           </ion-col>
 
           <!-- Fotos menores -->
           <ion-col size="5">
 
             <div class="foto-pequena">
-              <img src="" alt="Foto 2">
+              <img src="assets/mkft2.jpeg" alt="Foto 2">
             </div>
 
             <div class="foto-pequena">
-              <img src="" alt="Foto 3">
+              <img src="assets/mkft5.jpeg" alt="Foto 3">
             </div>
 
           </ion-col>
@@ -166,11 +189,11 @@
 
         <ion-row>
             <ion-col size="4">
-              <img src="" alt="Foto 4">
+              <img src="assets/mkft1.jpeg" alt="Foto 4">
             </ion-col>
 
             <ion-col size="8">
-              <img src="" alt="Foto 5">
+              <img src="assets/mkft4.jpeg" alt="Foto 5">
             </ion-col>
         </ion-row>
 
@@ -178,7 +201,95 @@
 
   </div> 
 
-</div>
+  <!--- card de perfil da Jhennyfer -->
+
+      <div class="perfil-card">
+        <div class="perfil jn-background">
+
+          <ion-avatar class="foto-perfil">
+            <img
+              alt="Foto de perfil"
+              src="assets/jn_pfp.jpeg"
+            />
+          </ion-avatar>
+
+          <div class="informacoes">
+            <div class="nome">
+              Jhennyfer Vitória Nunes
+            </div>
+
+            <div class="descricao">
+                Desenvolvedora que ama design e organização
+                <div class="redes">
+                  <span>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <a href="https://www.instagram.com/_jhennyfer_nunes_/" target="_blank">@_jhennyfer_nunes_</a>
+                  </span>
+                </div>
+              </div>
+            
+          </div>
+
+      </div>
+
+      <div class="lista">
+        <ion-list [inset]="true">
+          <ion-item>
+            <ion-label> <ion-icon name="book" color="secondary"></ion-icon> Ler livros</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label> <ion-icon name="footsteps" color="secondary"></ion-icon> Passear</ion-label>
+          </ion-item>
+        </ion-list>
+
+        <ion-list [inset]="true">
+          <ion-item>
+            <ion-label> <ion-icon name="albums" color="secondary"></ion-icon> Organizar</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label> <ion-icon name="code" color="secondary"></ion-icon> Programar</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
 
 
+      <ion-grid class="galeria">
+        <ion-row>
+
+          <!-- Foto principal -->
+          <ion-col size="7">
+            <img src="assets/jnft1.jpeg" alt="Foto principal">
+          </ion-col>
+
+          <!-- Fotos menores -->
+          <ion-col size="5">
+
+            <div class="foto-pequena">
+              <img src="assets/jnft4.jpeg" alt="Foto 2">
+            </div>
+
+            <div class="foto-pequena">
+              <img src="assets/jnft5.jpeg" alt="Foto 3">
+            </div>
+
+          </ion-col>
+
+
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="4">
+              <img src="assets/jnft2.jpeg" alt="Foto 4">
+            </ion-col>
+
+            <ion-col size="8">
+              <img src="assets/jnft3.jpeg" alt="Foto 5">
+            </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+  </div> 
+
+</div> <!-- div principal acaba -->
 </ion-content>
